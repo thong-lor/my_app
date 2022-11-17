@@ -4,6 +4,7 @@ import Store from '../Pages/Store.vue'
 import POS from '../Pages/POS.vue'
 import Report from '../Pages/Report.vue'
 import Transection from '../Pages/Transection.vue'
+import Nopage from '../Pages/Nopage.vue'
 
 export const routes=[
     {
@@ -30,6 +31,11 @@ export const routes=[
         name:"Transection",
         path:"/transection",
         component:Transection
+    },
+    {
+        name:"Nopage",
+        path:"/:catchAll(.*)",
+        component:Nopage
     }
 ];
 const router=createRouter({

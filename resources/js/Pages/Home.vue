@@ -1,10 +1,12 @@
 <template>
     <div>
+        <main_header/>
         <h1>Home page</h1>
     </div>
 </template>
 
 <script>
+import main_header from '../Components/main_header.vue'
 export default {
     name: 'ProductProjectHome',
 
@@ -13,7 +15,9 @@ export default {
             
         };
     },
-
+    components:{
+     main_header,   
+    },
     mounted() {
         
     },
